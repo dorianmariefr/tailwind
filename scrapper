@@ -5,11 +5,15 @@ require "httparty"
 require "active_support/all"
 require "fileutils"
 
-FileUtils.mkdir_p("tmp/cache")
-FileUtils.mkdir_p("css")
+CACHE_PATH = "tmp/cache"
+ASSETS_PATH = "vendor/assets/stylesheets/dorian-tailwind"
+LINKS = File.read("docs-links.txt").split
+
+FileUtils.mkdir_p(CACHE_PATH)
+FileUtils.mkdir_p(ASSETS_PATH)
 
 def get(url)
-  filepath = "tmp/cache/#{url.parameterize}.html"
+  filepath = "#{CACHE_PATH}/#{url.parameterize}.html"
 
   if File.exists?(filepath)
     File.read(filepath)
@@ -28,8 +32,6 @@ def tr_to_css(tr)
   ".#{clazz} { #{value} }"
 end
 
-LINKS = File.read("docs-links.txt").split
-
 LINKS.each do |link|
   slug = link.split("/").last
   doc = Nokogiri.HTML(get(link))
@@ -39,6 +41,6 @@ LINKS.each do |link|
   else
     content = trs.map { |tr| tr_to_css(tr) }.compact.join("\n\n")
     next if content.blank?
-    File.write("css/#{slug}.css", content)
+    File.write("#{ASSETS_PATH}/#{slug}.css", content)
   end
 end

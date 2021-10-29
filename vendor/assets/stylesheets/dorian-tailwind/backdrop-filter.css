@@ -1,0 +1,7 @@
+.backdrop-filter {
+  backdrop-filter: 1 1 1 1 1 1 1 1 1;
+}
+
+.backdrop-filter-none {
+  backdrop-filter: none;
+}

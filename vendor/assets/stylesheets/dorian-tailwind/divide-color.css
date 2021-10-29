@@ -1,0 +1,335 @@
+.divide-transparent > * + * {
+  border-color: transparent;
+}
+
+.divide-current > * + * {
+  border-color: currentColor;
+}
+
+.divide-black > * + * {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.divide-white > * + * {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.divide-gray-50 > * + * {
+  border-color: rgba(249, 250, 251, 1);
+}
+
+.divide-gray-100 > * + * {
+  border-color: rgba(243, 244, 246, 1);
+}
+
+.divide-gray-200 > * + * {
+  border-color: rgba(229, 231, 235, 1);
+}
+
+.divide-gray-300 > * + * {
+  border-color: rgba(209, 213, 219, 1);
+}
+
+.divide-gray-400 > * + * {
+  border-color: rgba(156, 163, 175, 1);
+}
+
+.divide-gray-500 > * + * {
+  border-color: rgba(107, 114, 128, 1);
+}
+
+.divide-gray-600 > * + * {
+  border-color: rgba(75, 85, 99, 1);
+}
+
+.divide-gray-700 > * + * {
+  border-color: rgba(55, 65, 81, 1);
+}
+
+.divide-gray-800 > * + * {
+  border-color: rgba(31, 41, 55, 1);
+}
+
+.divide-gray-900 > * + * {
+  border-color: rgba(17, 24, 39, 1);
+}
+
+.divide-red-50 > * + * {
+  border-color: rgba(254, 242, 242, 1);
+}
+
+.divide-red-100 > * + * {
+  border-color: rgba(254, 226, 226, 1);
+}
+
+.divide-red-200 > * + * {
+  border-color: rgba(254, 202, 202, 1);
+}
+
+.divide-red-300 > * + * {
+  border-color: rgba(252, 165, 165, 1);
+}
+
+.divide-red-400 > * + * {
+  border-color: rgba(248, 113, 113, 1);
+}
+
+.divide-red-500 > * + * {
+  border-color: rgba(239, 68, 68, 1);
+}
+
+.divide-red-600 > * + * {
+  border-color: rgba(220, 38, 38, 1);
+}
+
+.divide-red-700 > * + * {
+  border-color: rgba(185, 28, 28, 1);
+}
+
+.divide-red-800 > * + * {
+  border-color: rgba(153, 27, 27, 1);
+}
+
+.divide-red-900 > * + * {
+  border-color: rgba(127, 29, 29, 1);
+}
+
+.divide-yellow-50 > * + * {
+  border-color: rgba(255, 251, 235, 1);
+}
+
+.divide-yellow-100 > * + * {
+  border-color: rgba(254, 243, 199, 1);
+}
+
+.divide-yellow-200 > * + * {
+  border-color: rgba(253, 230, 138, 1);
+}
+
+.divide-yellow-300 > * + * {
+  border-color: rgba(252, 211, 77, 1);
+}
+
+.divide-yellow-400 > * + * {
+  border-color: rgba(251, 191, 36, 1);
+}
+
+.divide-yellow-500 > * + * {
+  border-color: rgba(245, 158, 11, 1);
+}
+
+.divide-yellow-600 > * + * {
+  border-color: rgba(217, 119, 6, 1);
+}
+
+.divide-yellow-700 > * + * {
+  border-color: rgba(180, 83, 9, 1);
+}
+
+.divide-yellow-800 > * + * {
+  border-color: rgba(146, 64, 14, 1);
+}
+
+.divide-yellow-900 > * + * {
+  border-color: rgba(120, 53, 15, 1);
+}
+
+.divide-green-50 > * + * {
+  border-color: rgba(236, 253, 245, 1);
+}
+
+.divide-green-100 > * + * {
+  border-color: rgba(209, 250, 229, 1);
+}
+
+.divide-green-200 > * + * {
+  border-color: rgba(167, 243, 208, 1);
+}
+
+.divide-green-300 > * + * {
+  border-color: rgba(110, 231, 183, 1);
+}
+
+.divide-green-400 > * + * {
+  border-color: rgba(52, 211, 153, 1);
+}
+
+.divide-green-500 > * + * {
+  border-color: rgba(16, 185, 129, 1);
+}
+
+.divide-green-600 > * + * {
+  border-color: rgba(5, 150, 105, 1);
+}
+
+.divide-green-700 > * + * {
+  border-color: rgba(4, 120, 87, 1);
+}
+
+.divide-green-800 > * + * {
+  border-color: rgba(6, 95, 70, 1);
+}
+
+.divide-green-900 > * + * {
+  border-color: rgba(6, 78, 59, 1);
+}
+
+.divide-blue-50 > * + * {
+  border-color: rgba(239, 246, 255, 1);
+}
+
+.divide-blue-100 > * + * {
+  border-color: rgba(219, 234, 254, 1);
+}
+
+.divide-blue-200 > * + * {
+  border-color: rgba(191, 219, 254, 1);
+}
+
+.divide-blue-300 > * + * {
+  border-color: rgba(147, 197, 253, 1);
+}
+
+.divide-blue-400 > * + * {
+  border-color: rgba(96, 165, 250, 1);
+}
+
+.divide-blue-500 > * + * {
+  border-color: rgba(59, 130, 246, 1);
+}
+
+.divide-blue-600 > * + * {
+  border-color: rgba(37, 99, 235, 1);
+}
+
+.divide-blue-700 > * + * {
+  border-color: rgba(29, 78, 216, 1);
+}
+
+.divide-blue-800 > * + * {
+  border-color: rgba(30, 64, 175, 1);
+}
+
+.divide-blue-900 > * + * {
+  border-color: rgba(30, 58, 138, 1);
+}
+
+.divide-indigo-50 > * + * {
+  border-color: rgba(238, 242, 255, 1);
+}
+
+.divide-indigo-100 > * + * {
+  border-color: rgba(224, 231, 255, 1);
+}
+
+.divide-indigo-200 > * + * {
+  border-color: rgba(199, 210, 254, 1);
+}
+
+.divide-indigo-300 > * + * {
+  border-color: rgba(165, 180, 252, 1);
+}
+
+.divide-indigo-400 > * + * {
+  border-color: rgba(129, 140, 248, 1);
+}
+
+.divide-indigo-500 > * + * {
+  border-color: rgba(99, 102, 241, 1);
+}
+
+.divide-indigo-600 > * + * {
+  border-color: rgba(79, 70, 229, 1);
+}
+
+.divide-indigo-700 > * + * {
+  border-color: rgba(67, 56, 202, 1);
+}
+
+.divide-indigo-800 > * + * {
+  border-color: rgba(55, 48, 163, 1);
+}
+
+.divide-indigo-900 > * + * {
+  border-color: rgba(49, 46, 129, 1);
+}
+
+.divide-purple-50 > * + * {
+  border-color: rgba(245, 243, 255, 1);
+}
+
+.divide-purple-100 > * + * {
+  border-color: rgba(237, 233, 254, 1);
+}
+
+.divide-purple-200 > * + * {
+  border-color: rgba(221, 214, 254, 1);
+}
+
+.divide-purple-300 > * + * {
+  border-color: rgba(196, 181, 253, 1);
+}
+
+.divide-purple-400 > * + * {
+  border-color: rgba(167, 139, 250, 1);
+}
+
+.divide-purple-500 > * + * {
+  border-color: rgba(139, 92, 246, 1);
+}
+
+.divide-purple-600 > * + * {
+  border-color: rgba(124, 58, 237, 1);
+}
+
+.divide-purple-700 > * + * {
+  border-color: rgba(109, 40, 217, 1);
+}
+
+.divide-purple-800 > * + * {
+  border-color: rgba(91, 33, 182, 1);
+}
+
+.divide-purple-900 > * + * {
+  border-color: rgba(76, 29, 149, 1);
+}
+
+.divide-pink-50 > * + * {
+  border-color: rgba(253, 242, 248, 1);
+}
+
+.divide-pink-100 > * + * {
+  border-color: rgba(252, 231, 243, 1);
+}
+
+.divide-pink-200 > * + * {
+  border-color: rgba(251, 207, 232, 1);
+}
+
+.divide-pink-300 > * + * {
+  border-color: rgba(249, 168, 212, 1);
+}
+
+.divide-pink-400 > * + * {
+  border-color: rgba(244, 114, 182, 1);
+}
+
+.divide-pink-500 > * + * {
+  border-color: rgba(236, 72, 153, 1);
+}
+
+.divide-pink-600 > * + * {
+  border-color: rgba(219, 39, 119, 1);
+}
+
+.divide-pink-700 > * + * {
+  border-color: rgba(190, 24, 93, 1);
+}
+
+.divide-pink-800 > * + * {
+  border-color: rgba(157, 23, 77, 1);
+}
+
+.divide-pink-900 > * + * {
+  border-color: rgba(131, 24, 67, 1);
+}

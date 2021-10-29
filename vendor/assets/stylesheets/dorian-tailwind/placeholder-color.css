@@ -1,0 +1,335 @@
+.placeholder-transparent::placeholder {
+  color: transparent;
+}
+
+.placeholder-current::placeholder {
+  color: currentColor;
+}
+
+.placeholder-black::placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.placeholder-white::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+.placeholder-gray-50::placeholder {
+  color: rgba(249, 250, 251, 1);
+}
+
+.placeholder-gray-100::placeholder {
+  color: rgba(243, 244, 246, 1);
+}
+
+.placeholder-gray-200::placeholder {
+  color: rgba(229, 231, 235, 1);
+}
+
+.placeholder-gray-300::placeholder {
+  color: rgba(209, 213, 219, 1);
+}
+
+.placeholder-gray-400::placeholder {
+  color: rgba(156, 163, 175, 1);
+}
+
+.placeholder-gray-500::placeholder {
+  color: rgba(107, 114, 128, 1);
+}
+
+.placeholder-gray-600::placeholder {
+  color: rgba(75, 85, 99, 1);
+}
+
+.placeholder-gray-700::placeholder {
+  color: rgba(55, 65, 81, 1);
+}
+
+.placeholder-gray-800::placeholder {
+  color: rgba(31, 41, 55, 1);
+}
+
+.placeholder-gray-900::placeholder {
+  color: rgba(17, 24, 39, 1);
+}
+
+.placeholder-red-50::placeholder {
+  color: rgba(254, 242, 242, 1);
+}
+
+.placeholder-red-100::placeholder {
+  color: rgba(254, 226, 226, 1);
+}
+
+.placeholder-red-200::placeholder {
+  color: rgba(254, 202, 202, 1);
+}
+
+.placeholder-red-300::placeholder {
+  color: rgba(252, 165, 165, 1);
+}
+
+.placeholder-red-400::placeholder {
+  color: rgba(248, 113, 113, 1);
+}
+
+.placeholder-red-500::placeholder {
+  color: rgba(239, 68, 68, 1);
+}
+
+.placeholder-red-600::placeholder {
+  color: rgba(220, 38, 38, 1);
+}
+
+.placeholder-red-700::placeholder {
+  color: rgba(185, 28, 28, 1);
+}
+
+.placeholder-red-800::placeholder {
+  color: rgba(153, 27, 27, 1);
+}
+
+.placeholder-red-900::placeholder {
+  color: rgba(127, 29, 29, 1);
+}
+
+.placeholder-yellow-50::placeholder {
+  color: rgba(255, 251, 235, 1);
+}
+
+.placeholder-yellow-100::placeholder {
+  color: rgba(254, 243, 199, 1);
+}
+
+.placeholder-yellow-200::placeholder {
+  color: rgba(253, 230, 138, 1);
+}
+
+.placeholder-yellow-300::placeholder {
+  color: rgba(252, 211, 77, 1);
+}
+
+.placeholder-yellow-400::placeholder {
+  color: rgba(251, 191, 36, 1);
+}
+
+.placeholder-yellow-500::placeholder {
+  color: rgba(245, 158, 11, 1);
+}
+
+.placeholder-yellow-600::placeholder {
+  color: rgba(217, 119, 6, 1);
+}
+
+.placeholder-yellow-700::placeholder {
+  color: rgba(180, 83, 9, 1);
+}
+
+.placeholder-yellow-800::placeholder {
+  color: rgba(146, 64, 14, 1);
+}
+
+.placeholder-yellow-900::placeholder {
+  color: rgba(120, 53, 15, 1);
+}
+
+.placeholder-green-50::placeholder {
+  color: rgba(236, 253, 245, 1);
+}
+
+.placeholder-green-100::placeholder {
+  color: rgba(209, 250, 229, 1);
+}
+
+.placeholder-green-200::placeholder {
+  color: rgba(167, 243, 208, 1);
+}
+
+.placeholder-green-300::placeholder {
+  color: rgba(110, 231, 183, 1);
+}
+
+.placeholder-green-400::placeholder {
+  color: rgba(52, 211, 153, 1);
+}
+
+.placeholder-green-500::placeholder {
+  color: rgba(16, 185, 129, 1);
+}
+
+.placeholder-green-600::placeholder {
+  color: rgba(5, 150, 105, 1);
+}
+
+.placeholder-green-700::placeholder {
+  color: rgba(4, 120, 87, 1);
+}
+
+.placeholder-green-800::placeholder {
+  color: rgba(6, 95, 70, 1);
+}
+
+.placeholder-green-900::placeholder {
+  color: rgba(6, 78, 59, 1);
+}
+
+.placeholder-blue-50::placeholder {
+  color: rgba(239, 246, 255, 1);
+}
+
+.placeholder-blue-100::placeholder {
+  color: rgba(219, 234, 254, 1);
+}
+
+.placeholder-blue-200::placeholder {
+  color: rgba(191, 219, 254, 1);
+}
+
+.placeholder-blue-300::placeholder {
+  color: rgba(147, 197, 253, 1);
+}
+
+.placeholder-blue-400::placeholder {
+  color: rgba(96, 165, 250, 1);
+}
+
+.placeholder-blue-500::placeholder {
+  color: rgba(59, 130, 246, 1);
+}
+
+.placeholder-blue-600::placeholder {
+  color: rgba(37, 99, 235, 1);
+}
+
+.placeholder-blue-700::placeholder {
+  color: rgba(29, 78, 216, 1);
+}
+
+.placeholder-blue-800::placeholder {
+  color: rgba(30, 64, 175, 1);
+}
+
+.placeholder-blue-900::placeholder {
+  color: rgba(30, 58, 138, 1);
+}
+
+.placeholder-indigo-50::placeholder {
+  color: rgba(238, 242, 255, 1);
+}
+
+.placeholder-indigo-100::placeholder {
+  color: rgba(224, 231, 255, 1);
+}
+
+.placeholder-indigo-200::placeholder {
+  color: rgba(199, 210, 254, 1);
+}
+
+.placeholder-indigo-300::placeholder {
+  color: rgba(165, 180, 252, 1);
+}
+
+.placeholder-indigo-400::placeholder {
+  color: rgba(129, 140, 248, 1);
+}
+
+.placeholder-indigo-500::placeholder {
+  color: rgba(99, 102, 241, 1);
+}
+
+.placeholder-indigo-600::placeholder {
+  color: rgba(79, 70, 229, 1);
+}
+
+.placeholder-indigo-700::placeholder {
+  color: rgba(67, 56, 202, 1);
+}
+
+.placeholder-indigo-800::placeholder {
+  color: rgba(55, 48, 163, 1);
+}
+
+.placeholder-indigo-900::placeholder {
+  color: rgba(49, 46, 129, 1);
+}
+
+.placeholder-purple-50::placeholder {
+  color: rgba(245, 243, 255, 1);
+}
+
+.placeholder-purple-100::placeholder {
+  color: rgba(237, 233, 254, 1);
+}
+
+.placeholder-purple-200::placeholder {
+  color: rgba(221, 214, 254, 1);
+}
+
+.placeholder-purple-300::placeholder {
+  color: rgba(196, 181, 253, 1);
+}
+
+.placeholder-purple-400::placeholder {
+  color: rgba(167, 139, 250, 1);
+}
+
+.placeholder-purple-500::placeholder {
+  color: rgba(139, 92, 246, 1);
+}
+
+.placeholder-purple-600::placeholder {
+  color: rgba(124, 58, 237, 1);
+}
+
+.placeholder-purple-700::placeholder {
+  color: rgba(109, 40, 217, 1);
+}
+
+.placeholder-purple-800::placeholder {
+  color: rgba(91, 33, 182, 1);
+}
+
+.placeholder-purple-900::placeholder {
+  color: rgba(76, 29, 149, 1);
+}
+
+.placeholder-pink-50::placeholder {
+  color: rgba(253, 242, 248, 1);
+}
+
+.placeholder-pink-100::placeholder {
+  color: rgba(252, 231, 243, 1);
+}
+
+.placeholder-pink-200::placeholder {
+  color: rgba(251, 207, 232, 1);
+}
+
+.placeholder-pink-300::placeholder {
+  color: rgba(249, 168, 212, 1);
+}
+
+.placeholder-pink-400::placeholder {
+  color: rgba(244, 114, 182, 1);
+}
+
+.placeholder-pink-500::placeholder {
+  color: rgba(236, 72, 153, 1);
+}
+
+.placeholder-pink-600::placeholder {
+  color: rgba(219, 39, 119, 1);
+}
+
+.placeholder-pink-700::placeholder {
+  color: rgba(190, 24, 93, 1);
+}
+
+.placeholder-pink-800::placeholder {
+  color: rgba(157, 23, 77, 1);
+}
+
+.placeholder-pink-900::placeholder {
+  color: rgba(131, 24, 67, 1);
+}

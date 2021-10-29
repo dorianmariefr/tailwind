@@ -1,0 +1,49 @@
+.divide-x-0 > * + * {
+  border-right-width: calc(0px * 1);
+  border-left-width: calc(0px * calc(1 - 1));
+}
+
+.divide-x-2 > * + * {
+  border-right-width: calc(2px * 1);
+  border-left-width: calc(2px * calc(1 - 1));
+}
+
+.divide-x-4 > * + * {
+  border-right-width: calc(4px * 1);
+  border-left-width: calc(4px * calc(1 - 1));
+}
+
+.divide-x-8 > * + * {
+  border-right-width: calc(8px * 1);
+  border-left-width: calc(8px * calc(1 - 1));
+}
+
+.divide-x > * + * {
+  border-right-width: calc(1px * 1);
+  border-left-width: calc(1px * calc(1 - 1));
+}
+
+.divide-y-0 > * + * {
+  border-top-width: calc(0px * calc(1 - 1));
+  border-bottom-width: calc(0px * 1);
+}
+
+.divide-y-2 > * + * {
+  border-top-width: calc(2px * calc(1 - 1));
+  border-bottom-width: calc(2px * 1);
+}
+
+.divide-y-4 > * + * {
+  border-top-width: calc(4px * calc(1 - 1));
+  border-bottom-width: calc(4px * 1);
+}
+
+.divide-y-8 > * + * {
+  border-top-width: calc(8px * calc(1 - 1));
+  border-bottom-width: calc(8px * 1);
+}
+
+.divide-y > * + * {
+  border-top-width: calc(1px * calc(1 - 1));
+  border-bottom-width: calc(1px * 1);
+}

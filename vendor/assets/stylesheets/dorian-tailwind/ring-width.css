@@ -1,0 +1,23 @@
+.ring-0 {
+  box-shadow: 1 0 0 0 calc(0px + 1) 1;
+}
+
+.ring-1 {
+  box-shadow: 1 0 0 0 calc(1px + 1) 1;
+}
+
+.ring-2 {
+  box-shadow: 1 0 0 0 calc(2px + 1) 1;
+}
+
+.ring {
+  box-shadow: 1 0 0 0 calc(3px + 1) 1;
+}
+
+.ring-4 {
+  box-shadow: 1 0 0 0 calc(4px + 1) 1;
+}
+
+.ring-8 {
+  box-shadow: 1 0 0 0 calc(8px + 1) 1;
+}

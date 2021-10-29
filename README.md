@@ -10,17 +10,17 @@ Credits to https://tailwindcss.com
 
 ### Install
 
-```bash
-gem install dorian-tailwind
 ```
-
-Or as part of my other gems:
-
-```bash
-gem install dorian
+gem "dorian-tailwind"
 ```
 
 ### Usage
+
+in your `email.css.scss` for instance:
+
+```
+//= require dorian-tailwind
+```
 
 ### How it was built
 

@@ -6,7 +6,7 @@ require "active_support/all"
 require "fileutils"
 
 CACHE_PATH = "tmp/cache"
-ASSETS_PATH = "vendor/assets/stylesheets/dorian-tailwind"
+ASSETS_PATH = "app/assets/stylesheets/dorian-tailwind"
 LINKS = File.read("docs-links.txt").split.grep_v(/container/)
 
 FileUtils.mkdir_p(CACHE_PATH)
@@ -26,8 +26,9 @@ end
 
 def tr_to_css(tr)
   clazz, value = tr.css("td").map(&:text)
+  clazz.gsub!(".", "\\.")
   value = value.lines.grep_v(/^--/).join
-  value = value.gsub(/var\([a-z0-9, #-]+\)/, "1")
+  value.gsub!(/var\([a-z0-9, #-]+\)/, "1")
   return if value.blank?
   ".#{clazz} { #{value} }"
 end

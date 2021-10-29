@@ -8,6 +8,7 @@ require "fileutils"
 CACHE_PATH = "tmp/cache"
 ASSETS_PATH = "app/assets/stylesheets/dorian-tailwind"
 LINKS = File.read("docs-links.txt").split.grep_v(/container/)
+PREFLIGHT = "@import \"dorian-tailwind/preflight\";\n"
 
 FileUtils.mkdir_p(CACHE_PATH)
 FileUtils.mkdir_p(ASSETS_PATH)
@@ -26,9 +27,9 @@ end
 
 def tr_to_css(tr)
   clazz, value = tr.css("td").map(&:text)
-  clazz.gsub!(".", "\\.")
+  clazz = clazz.gsub(".", "\\.").gsub("/", "\\/")
   value = value.lines.grep_v(/^--/).join
-  value.gsub!(/var\([a-z0-9, #-]+\)/, "1")
+  value = value.gsub(/var\([a-z0-9, #-]+\)/, "1")
   return if value.blank?
   ".#{clazz} { #{value} }"
 end
@@ -48,5 +49,6 @@ end
 
 File.write(
   "#{ASSETS_PATH}.css.scss",
-  slugs.map { |slug| "@import \"dorian-tailwind/#{slug}\";" }.join("\n")
+  PREFLIGHT +
+    slugs.map { |slug| "@import \"dorian-tailwind/#{slug}\";" }.join("\n")
 )

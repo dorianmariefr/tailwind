@@ -7,7 +7,7 @@ require "fileutils"
 
 CACHE_PATH = "tmp/cache"
 ASSETS_PATH = "vendor/assets/stylesheets/dorian-tailwind"
-LINKS = File.read("docs-links.txt").split
+LINKS = File.read("docs-links.txt").split.grep_v(/container/)
 
 FileUtils.mkdir_p(CACHE_PATH)
 FileUtils.mkdir_p(ASSETS_PATH)
@@ -32,15 +32,20 @@ def tr_to_css(tr)
   ".#{clazz} { #{value} }"
 end
 
+slugs = []
+
 LINKS.each do |link|
   slug = link.split("/").last
   doc = Nokogiri.HTML(get(link))
   trs = doc.css("tbody.align-baseline tr")
 
-  if slug == "container"
-  else
-    content = trs.map { |tr| tr_to_css(tr) }.compact.join("\n\n")
-    next if content.blank?
-    File.write("#{ASSETS_PATH}/#{slug}.css", content)
-  end
+  content = trs.map { |tr| tr_to_css(tr) }.compact.join("\n\n")
+  next if content.blank?
+  slugs << slug
+  File.write("#{ASSETS_PATH}/#{slug}.css", content)
 end
+
+File.write(
+  "#{ASSETS_PATH}.css.scss",
+  slugs.map { |slug| "@import \"dorian-tailwind/#{slug}\";" }.join("\n")
+)

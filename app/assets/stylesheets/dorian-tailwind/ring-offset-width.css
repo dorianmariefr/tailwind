@@ -1,19 +1,19 @@
 .ring-offset-0 {
-  box-shadow: 0 0 0 1 1, 1;
+  box-shadow: 0 0 0 0 #fff, 0 0 #0000;
 }
 
 .ring-offset-1 {
-  box-shadow: 0 0 0 1 1, 1;
+  box-shadow: 0 0 0 0 #fff, 0 0 #0000;
 }
 
 .ring-offset-2 {
-  box-shadow: 0 0 0 1 1, 1;
+  box-shadow: 0 0 0 0 #fff, 0 0 #0000;
 }
 
 .ring-offset-4 {
-  box-shadow: 0 0 0 1 1, 1;
+  box-shadow: 0 0 0 0 #fff, 0 0 #0000;
 }
 
 .ring-offset-8 {
-  box-shadow: 0 0 0 1 1, 1;
+  box-shadow: 0 0 0 0 #fff, 0 0 #0000;
 }

@@ -3,33 +3,49 @@
 }
 
 .bg-gradient-to-t {
-  background-image: linear-gradient(to top, 1);
+  background-image: linear-gradient(to top, #f9fafb, rgba(249, 250, 251, 0));
 }
 
 .bg-gradient-to-tr {
-  background-image: linear-gradient(to top right, 1);
+  background-image: linear-gradient(
+    to top right,
+    #f9fafb,
+    rgba(249, 250, 251, 0)
+  );
 }
 
 .bg-gradient-to-r {
-  background-image: linear-gradient(to right, 1);
+  background-image: linear-gradient(to right, #f9fafb, rgba(249, 250, 251, 0));
 }
 
 .bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, 1);
+  background-image: linear-gradient(
+    to bottom right,
+    #f9fafb,
+    rgba(249, 250, 251, 0)
+  );
 }
 
 .bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, 1);
+  background-image: linear-gradient(to bottom, #f9fafb, rgba(249, 250, 251, 0));
 }
 
 .bg-gradient-to-bl {
-  background-image: linear-gradient(to bottom left, 1);
+  background-image: linear-gradient(
+    to bottom left,
+    #f9fafb,
+    rgba(249, 250, 251, 0)
+  );
 }
 
 .bg-gradient-to-l {
-  background-image: linear-gradient(to left, 1);
+  background-image: linear-gradient(to left, #f9fafb, rgba(249, 250, 251, 0));
 }
 
 .bg-gradient-to-tl {
-  background-image: linear-gradient(to top left, 1);
+  background-image: linear-gradient(
+    to top left,
+    #f9fafb,
+    rgba(249, 250, 251, 0)
+  );
 }

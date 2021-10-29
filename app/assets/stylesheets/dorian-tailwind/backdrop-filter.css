@@ -1,5 +1,6 @@
 .backdrop-filter {
-  backdrop-filter: 1 1 1 1 1 1 1 1 1;
+  backdrop-filter: blur(0) brightness(1) contrast(1) grascale(0)
+    hue-rotate(0deg) invert(0) 1 saturate(1) sepia(0);
 }
 
 .backdrop-filter-none {

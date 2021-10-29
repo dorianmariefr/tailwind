@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+
+require "nokogiri"
+require "httparty"
+require "active_support/all"
+require "fileutils"
+
+FileUtils.mkdir_p("tmp/cache")
+FileUtils.mkdir_p("css")
+
+def get(url)
+  filepath = "tmp/cache/#{url.parameterize}.html"
+
+  if File.exists?(filepath)
+    File.read(filepath)
+  else
+    response = HTTParty.get(url)
+    File.write(filepath, response.body)
+    response.body
+  end
+end
+
+def tr_to_css(tr)
+  clazz, value = tr.css("td").map(&:text)
+  value = value.lines.grep_v(/^--/).join
+  value = value.gsub(/var\([a-z0-9, #-]+\)/, "1")
+  return if value.blank?
+  ".#{clazz} { #{value} }"
+end
+
+LINKS = File.read("docs-links.txt").split
+
+LINKS.each do |link|
+  slug = link.split("/").last
+  doc = Nokogiri.HTML(get(link))
+  trs = doc.css("tbody.align-baseline tr")
+
+  if slug == "container"
+  else
+    content = trs.map { |tr| tr_to_css(tr) }.compact.join("\n\n")
+    next if content.blank?
+    File.write("css/#{slug}.css", content)
+  end
+end

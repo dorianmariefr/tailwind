@@ -28,7 +28,7 @@ end
 def tr_to_css(tr)
   clazz, value = tr.css("td").map(&:text)
   clazz = clazz.gsub(".", "\\.").gsub("/", "\\/")
-  value = value.lines.grep_v(/^--/).join
+  value = value.lines.grep_v(/^--/).grep_v(/@/).grep_v(/animation/).join
   value.gsub!("var(--tw-backdrop-blur)", "blur(0)")
   value.gsub!("var(--tw-backdrop-brightness)", "brightness(1)")
   value.gsub!("var(--tw-backdrop-contrast)", "contrast(1)")

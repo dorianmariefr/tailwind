@@ -28,7 +28,7 @@ end
 def tr_to_css(tr)
   clazz, value = tr.css("td").map(&:text)
   clazz = clazz.gsub(".", "\\.").gsub("/", "\\/")
-  value = value.lines.grep_v(/^--/).grep_v(/@/).grep_v(/animation/).join
+  value = value.lines.grep_v(/^--/).join
   value.gsub!("var(--tw-backdrop-blur)", "blur(0)")
   value.gsub!("var(--tw-backdrop-brightness)", "brightness(1)")
   value.gsub!("var(--tw-backdrop-contrast)", "contrast(1)")
@@ -89,7 +89,7 @@ LINKS.each do |link|
   trs = doc.css("tbody.align-baseline tr")
 
   content = trs.map { |tr| tr_to_css(tr) }.compact.join("\n\n")
-  if content.present?
+  if slug != "animation" && content.present?
     slugs << slug
     File.write("#{ASSETS_PATH}/#{slug}.css", content)
   else
